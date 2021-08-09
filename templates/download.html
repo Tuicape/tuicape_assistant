@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Скачать Tuicape assistant
+{% endblock %}
+
+{% block body %}
+<br>
+<section class="download padding site">
+    <h2 id="adownload" >Скачать Tuicape можно здесь</h2>
+    <div class="information">
+        <p>Для скачивания Tuicape необходимо ввести почту.<br>
+            Никаких рекламных сообщений и&nbsp;рассылок не&nbsp;будет!<br>
+            Это нужно для того, что бы мы послали файл вам в письме, и что бы проверить что вы - не бот.
+        </p>
+        <div class="registration" id="aregistration">
+            <form action="download_button()" enctype="text/plain" autocomplete="on">
+                <input id="usermail" name="usermail" type="email"  required="required" placeholder="Укажите адрес эл.почты">
+                <br>
+                <input class="download_box" type="submit" value="Скачать" name='download'>
+            </form>
+            
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <meta content="Tuicape assistant - ваш личный помошник" name="title">
+    <meta name="description" content="Встречайте Tuicape - ассистент с огромным функционалом возможностей.
+     Удобный простой интерфейс даёт возможность легко и быстро его использовать,
+     а встроенный чат не даст заскучать на собеседовании или перемене в школе."   >
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a class="social_link slider_logotype" href="http://192.168.0.104:5000/home" title="Главная страница" target="_blank" rel="nofollow"></a>
+        <nav>
+            <ul class="menu">
+                <li class="menu_list"><a class="menu_link" href="http://192.168.0.104:5000/home">Главная</a></li>
+                <li class="menu_list"><a class="menu_link" href="http://192.168.0.104:5000/about">Обзор</a></li>
+                <li class="menu_list"><a class="menu_link" href="http://192.168.0.104:5000/help">Помощь</a></li>
+                <li class="menu_list"><a class="menu_link" href="http://192.168.0.104:5000/support">Поддержка</a></li>
+            </ul>
+        </nav>
+        <a class="registration_link" href="http://192.168.0.104:5000/download">Скачать</a>
+    </div>
+    {% block body %}{% endblock %}
+    <div class="footer">
+        <div class="social">
+            <a class="social_link social_link_img_1" href="mailto:samolenkosvatik93@gmail.com?subject=Вопрос по Tuicape" title="Ссылка на почту автора на Gmail" target="_blank" rel="nofollow"> </a>
+            <a class="social_link social_link_img_2" href="viber://chat?number=+380679091128" title="Официальная страница автора в Viber (только для ПК)" target="_blank" rel="nofollow"></a>
+            <a class="social_link social_link_img_3" href="https://discord.com/invite/nWhxQEaMMt" title="Официальная страница автора в Discord" target="_blank" rel="nofollow"></a>
+        </div>
+        <p class="footer_text">&copy;&nbsp;All right reserved 2021</p>
+    </div>
+</body>
+</html>
